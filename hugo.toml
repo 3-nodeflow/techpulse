@@ -40,9 +40,24 @@ buildFuture = true
 
   # Menu Superior
   [[params.mainMenuItems]]
-    name = "Análises & Reviews"
+    name = "Análises"
     url = "posts/"
     weight = 10
+
+  [[params.mainMenuItems]]
+    name = "Sobre"
+    url = "sobre/"
+    weight = 20
+
+  [[params.mainMenuItems]]
+    name = "Contacto"
+    url = "contacto/"
+    weight = 30
+
+  [[params.mainMenuItems]]
+    name = "Privacidade"
+    url = "politica-de-privacidade/"
+    weight = 40
 
   [[params.mainMenuItems]]
     name = "Categorias"
