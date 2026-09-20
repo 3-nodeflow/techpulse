@@ -10,13 +10,13 @@ buildFuture = true
 [pagination]
   pagerSize = 10
 
+# 1. Parâmetros Simples (devem ficar no topo de [params])
 [params]
   env = 'production'
   title = 'TechPulse AI'
   description = 'As melhores análises de smartphones, laptops e gadgets de consumo com ofertas da Amazon Brasil.'
   author = 'TechPulse Team'
   
-  # Estilo Visual e Recursos
   defaultTheme = 'auto'
   disableThemeToggle = false
   ShowReadingTime = true
@@ -27,47 +27,47 @@ buildFuture = true
   ShowToc = true
   TocOpen = false
 
-  # Ativar Imagens de Capa nos Cartões da Homepage
-  [params.cover]
-    hidden = false          # Exibe a imagem dentro do post
-    hiddenInList = false    # Exibe a imagem nos cartões da Homepage
-    hiddenInSingle = false
+# 2. Sub-bloco para Imagens de Capa
+[params.cover]
+  hidden = false
+  hiddenInList = false
+  hiddenInSingle = false
 
-  # Banner Inicial de Boas-Vindas
-  [params.homeInfoParams]
-    Title = "TechPulse AI 📱💻"
-    Content = "Análises imparciais e diárias sobre os mais recentes telemóveis, portáteis e gadgets. Encontre as melhores ofertas e recomendações verificadas na Amazon Brasil."
+# 3. Sub-bloco do Banner da Homepage
+[params.homeInfoParams]
+  Title = "TechPulse AI 📱💻"
+  Content = "Análises imparciais e diárias sobre os mais recentes telemóveis, portáteis e gadgets. Encontre as melhores ofertas e recomendações verificadas na Amazon Brasil."
 
-  # Menu Superior
-  [[params.mainMenuItems]]
-    name = "Análises"
-    url = "posts/"
-    weight = 10
+# 4. Sintaxe Oficial de Menus do Hugo / PaperMod
+[[menu.main]]
+  name = "Análises"
+  url = "posts/"
+  weight = 10
 
-  [[params.mainMenuItems]]
-    name = "Sobre"
-    url = "sobre/"
-    weight = 20
+[[menu.main]]
+  name = "Sobre"
+  url = "sobre/"
+  weight = 20
 
-  [[params.mainMenuItems]]
-    name = "Contacto"
-    url = "contacto/"
-    weight = 30
+[[menu.main]]
+  name = "Contacto"
+  url = "contacto/"
+  weight = 30
 
-  [[params.mainMenuItems]]
-    name = "Privacidade"
-    url = "politica-de-privacidade/"
-    weight = 40
+[[menu.main]]
+  name = "Privacidade"
+  url = "politica-de-privacidade/"
+  weight = 40
 
-  [[params.mainMenuItems]]
-    name = "Categorias"
-    url = "categories/"
-    weight = 20
+[[menu.main]]
+  name = "Categorias"
+  url = "categories/"
+  weight = 50
 
-  [[params.mainMenuItems]]
-    name = "Tags"
-    url = "tags/"
-    weight = 30
+[[menu.main]]
+  name = "Tags"
+  url = "tags/"
+  weight = 60
 
 [permalinks]
   posts = '/posts/:slug/'
