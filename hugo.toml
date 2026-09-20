@@ -1,4 +1,7 @@
 baseURL = 'https://3-nodeflow.github.io/techpulse/'
 languageCode = 'pt-pt'
 title = 'TechPulse AI'
-# theme = 'papercred' # Ex: 'ananke' ou 'papercred'
+# theme = 'papercred'
+
+[permalinks]
+  posts = '/posts/:filename/'
