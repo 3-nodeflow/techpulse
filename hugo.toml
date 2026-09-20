@@ -1,6 +1,6 @@
 baseURL = 'https://3-nodeflow.github.io/techpulse/'
 languageCode = 'pt-pt'
-title = 'TechPulse AI | Análises de Telemóveis & Gadgets'
+title = 'TechPulse AI'
 theme = 'pehtheme-hugo'
 
 enableInlineShortcodes = true
@@ -11,44 +11,12 @@ buildFuture = true
   pagerSize = 10
 
 [params]
-  env = 'production'
-  title = 'TechPulse AI'
-  description = 'As melhores análises de smartphones, laptops e gadgets com ofertas da Amazon Brasil.'
-  [params.author]
-  name = 'TechPulse Team'
-  avatar = '' # Opcional: URL da imagem do autor se quiseres
+  description = 'As melhores análises de telemóveis, laptops e gadgets com ofertas da Amazon Brasil.'
   
-  # Visual Atraente
-  defaultTheme = 'auto'
-  disableThemeToggle = false
-  ShowReadingTime = true
-  ShowShareButtons = true
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = true
-  ShowCodeCopyButtons = true
-  ShowToc = true # Adiciona Índice/Tabela de conteúdos no topo do artigo!
-  TocOpen = false
-
-  # Banner Inicial de Boas-Vindas
-  [params.homeInfoParams]
-    Title = "TechPulse AI 📱💻"
-    Content = "Descubra as melhores análises e recomendações de smartphones, portáteis e gadgets do mercado, com links e ofertas verificadas na Amazon Brasil."
-
-  # Menu de Navegação
-  [[params.mainMenuItems]]
-    name = "Smartphones & Gadgets"
-    url = "posts/"
-    weight = 10
-
-  [[params.mainMenuItems]]
-    name = "Categorias"
-    url = "categories/"
-    weight = 20
-
-  [[params.mainMenuItems]]
-    name = "Tags"
-    url = "tags/"
-    weight = 30
+  # Estrutura do Autor exigida pelo pehtheme-hugo
+  [params.author]
+    name = 'TechPulse Team'
+    bio = 'Análises automatizadas dos melhores gadgets e tecnologia de consumo.'
 
 [permalinks]
   posts = '/posts/:slug/'
