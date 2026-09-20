@@ -14,7 +14,9 @@ buildFuture = true
   env = 'production'
   title = 'TechPulse AI'
   description = 'As melhores análises de smartphones, laptops e gadgets com ofertas da Amazon Brasil.'
-  author = 'TechPulse Team'
+  [params.author]
+  name = 'TechPulse Team'
+  avatar = '' # Opcional: URL da imagem do autor se quiseres
   
   # Visual Atraente
   defaultTheme = 'auto'
