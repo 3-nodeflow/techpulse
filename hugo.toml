@@ -1,45 +1,46 @@
 baseURL = 'https://3-nodeflow.github.io/techpulse/'
 languageCode = 'pt-pt'
-title = 'TechPulse AI'
+title = 'TechPulse AI | Análises de Telemóveis & Gadgets'
 theme = 'PaperMod'
 
 enableInlineShortcodes = true
 enableRobotsTXT = true
 buildFuture = true
 
-# Nova sintaxe exigida pelo Hugo v0.146.0+
 [pagination]
   pagerSize = 10
 
 [params]
   env = 'production'
   title = 'TechPulse AI'
-  description = 'Análises e novidades sobre tecnologia geradas automaticamente via AI.'
+  description = 'As melhores análises de smartphones, laptops e gadgets com ofertas da Amazon Brasil.'
   author = 'TechPulse Team'
   
-  # Aparência e Comportamento
-  defaultTheme = 'auto' # Alterna automaticamente entre modo Claro e Escuro
+  # Visual Atraente
+  defaultTheme = 'auto'
   disableThemeToggle = false
   ShowReadingTime = true
   ShowShareButtons = true
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   ShowCodeCopyButtons = true
-  
-  # Cabeçalho / Banner da Homepage
-  [params.homeInfoParams]
-    Title = "Bem-vindo ao TechPulse AI 🚀"
-    Content = "Análises imparciais, novidades e lançamentos do mundo da tecnologia, processados com Inteligência Artificial."
+  ShowToc = true # Adiciona Índice/Tabela de conteúdos no topo do artigo!
+  TocOpen = false
 
-  # Menu de Navegação Superior
+  # Banner Inicial de Boas-Vindas
+  [params.homeInfoParams]
+    Title = "TechPulse AI 📱💻"
+    Content = "Descubra as melhores análises e recomendações de smartphones, portáteis e gadgets do mercado, com links e ofertas verificadas na Amazon Brasil."
+
+  # Menu de Navegação
   [[params.mainMenuItems]]
-    name = "Artigos"
+    name = "Smartphones & Gadgets"
     url = "posts/"
     weight = 10
 
   [[params.mainMenuItems]]
-    name = "Pesquisar"
-    url = "search/"
+    name = "Categorias"
+    url = "categories/"
     weight = 20
 
   [[params.mainMenuItems]]
