@@ -1,7 +1,7 @@
 baseURL = 'https://3-nodeflow.github.io/techpulse/'
 languageCode = 'pt-pt'
 title = 'TechPulse AI | Análises de Telemóveis & Gadgets'
-theme = 'PaperMod'
+theme = 'pehtheme-hugo'
 
 enableInlineShortcodes = true
 enableRobotsTXT = true
