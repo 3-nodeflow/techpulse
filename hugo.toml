@@ -1,7 +1,48 @@
 baseURL = 'https://3-nodeflow.github.io/techpulse/'
 languageCode = 'pt-pt'
 title = 'TechPulse AI'
-# theme = 'papercred'
+theme = 'PaperMod'
+
+paginate = 10
+enableInlineShortcodes = true
+enableRobotsTXT = true
+buildFuture = true
+
+[params]
+  env = 'production'
+  title = 'TechPulse AI'
+  description = 'Análises e novidades sobre tecnologia geradas automaticamente via AI.'
+  author = 'TechPulse Team'
+  
+  # Aparência e Comportamento
+  defaultTheme = 'auto' # Alterna automaticamente entre modo Claro e Escuro
+  disableThemeToggle = false
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  
+  # Cabeçalho / Banner da Homepage
+  [params.homeInfoParams]
+    Title = "Bem-vindo ao TechPulse AI 🚀"
+    Content = "Análises imparciais, novidades e lançamentos do mundo da tecnologia, processados com Inteligência Artificial."
+
+  # Menu de Navegação Superior
+  [[params.mainMenuItems]]
+    name = "Artigos"
+    url = "posts/"
+    weight = 10
+
+  [[params.mainMenuItems]]
+    name = "Pesquisar"
+    url = "search/"
+    weight = 20
+
+  [[params.mainMenuItems]]
+    name = "Tags"
+    url = "tags/"
+    weight = 30
 
 [permalinks]
-  posts = '/posts/:filename/'
+  posts = '/posts/:slug/'
