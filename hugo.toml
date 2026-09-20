@@ -11,12 +11,21 @@ buildFuture = true
   pagerSize = 10
 
 [params]
-  description = 'As melhores análises de telemóveis, laptops e gadgets com ofertas da Amazon Brasil.'
+  description = 'Análises automatizadas dos melhores smartphones, laptops e gadgets de consumo com ofertas verificadas.'
   
-  # Estrutura do Autor exigida pelo pehtheme-hugo
+  # Nome do bloco/categoria da página inicial (substitui "Astronomy")
+  homeCategory = 'Análises Recentes'
+
+  # Estrutura do Autor e Rodapé customizado
   [params.author]
-    name = 'TechPulse Team'
-    bio = 'Análises automatizadas dos melhores gadgets e tecnologia de consumo.'
+    name = 'TechPulse AI'
+    bio = 'Análises diárias e imparciais sobre os mais recentes smartphones, laptops e gadgets com inteligência artificial.'
+
+  # Textos do Rodapé (substitui o Lorem Ipsum e "built in Rembele")
+  [params.footer]
+    tagline = 'Análises modernas e diretas ao ponto. Atualizado diariamente via IA.'
+    text = 'O TechPulse AI ajuda-o a escolher os melhores dispositivos tecnológicos com links e ofertas atualizadas na Amazon Brasil.'
+    copyright = '© 2026 TechPulse AI. Todos os direitos reservados.'
 
 [permalinks]
   posts = '/posts/:slug/'
