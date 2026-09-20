@@ -3,10 +3,13 @@ languageCode = 'pt-pt'
 title = 'TechPulse AI'
 theme = 'PaperMod'
 
-paginate = 10
 enableInlineShortcodes = true
 enableRobotsTXT = true
 buildFuture = true
+
+# Nova sintaxe exigida pelo Hugo v0.146.0+
+[pagination]
+  pagerSize = 10
 
 [params]
   env = 'production'
