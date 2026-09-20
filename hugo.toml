@@ -1,8 +1,8 @@
 baseURL = '/'
 relativeURLs = true
 canonifyURLs = false
-languageCode = 'pt-pt'
-title = 'TechPulse AI | Análises de Telemóveis & Gadgets'
+languageCode = 'pt-br'
+title = 'TechPulse AI | Análises de Celulares & Gadgets'
 theme = 'PaperMod'
 
 enableInlineShortcodes = true
