@@ -1,4 +1,6 @@
-baseURL = 'https://3-nodeflow.github.io/techpulse/'
+baseURL = '/'
+relativeURLs = true
+canonifyURLs = false
 languageCode = 'pt-pt'
 title = 'TechPulse AI | Análises de Telemóveis & Gadgets'
 theme = 'PaperMod'
